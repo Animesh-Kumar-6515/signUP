@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+		<div class="image">
+			<h2>Sign UP</h2>
+		</div>
+		<div class="username">
+			<input type="text"
+				name="username"
+				placeholder="Enter Username">
+		</div>
+		<div class="pass">
+			<input id="pass"
+				type="password"
+				name="pass"
+				placeholder="Enter Password"
+				required"">
+			<input id="confirm_pass"
+				type="password"
+				name="confirm_pass"
+				placeholder="Confirm Password"
+				required
+				onkeyup="validate_password()">
+		</div>
+		<span id="wrong_pass_alert"></span>
+		<div class="buttons">
+			<button id="create"
+					class="submit_btn"
+					onclick="wrong_pass_alert()">
+				Submit
+			</button>
+		</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
